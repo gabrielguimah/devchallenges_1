@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  max-width: 1440px;
+  max-height: 1080px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 40px;
+  margin-right: 100px;
+}
+
+h2 {
+  padding: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  margin-left: -30px;
+  margin-right: 35px;
+  width: 539px;
+  height: 447px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.information {
+  margin-left: 20px;
+}
+
+.information p {
+  margin-top:  30px;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  margin-right: 210px;
+}
+
+button {
+  all: unset;
+  margin-top: 30px;
+  background-color: #333333;
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 23px 43px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #505050;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', monospace;
+  font-weight: 500;
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+@media screen and (max-width: 480px) { 
+  .container {
+    flex-direction: column; 
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  img {
+    width: 286px; 
+    height: 238px;
+  }
+  
+  .information h1 { 
+    margin-top: 50px;
+    font-size: 35px;
   }
 }
